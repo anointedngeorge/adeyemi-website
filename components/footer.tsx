@@ -1,8 +1,11 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import Image from "next/image"
+import {CONTACT_SETUP} from "./configs"
+import Logo from "./logo"
 
 export default function Footer() {
+  
   return (
     <footer className="bg-dark text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,9 +13,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="text-xl font-bold">
             {/* AdeyemiApanpaandcompany */}
-            <Image
-                    width={100}
-                    height={100} src="./img/logo.jpeg" className="w-52 h-14 rounded-xl" alt="logo image" />
+            <Logo classname="lg:w-36 lg:h-30 w-44  sm:w-28 sm:h-24" />
             </Link>
             <p className="mt-4 text-white/70">
               Empowering businesses through innovative solutions and strategic partnerships.
@@ -102,17 +103,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic text-white/70">
-              123 Business Avenue
-              <br />
-              Suite 500
-              <br />
-              New York, NY 10001
+              {CONTACT_SETUP.address}
             </address>
             <p className="mt-4 text-white/70">
-              <strong>Phone:</strong> +1 (555) 123-4567
+              <strong>Phone:</strong> {CONTACT_SETUP.phone}
             </p>
             <p className="text-white/70">
-              <strong>Email:</strong> info@corpvision.com
+              <strong>Email:</strong> {CONTACT_SETUP.email}
             </p>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Consultation from "@/components/consultation"
 import Team from "@/components/team"
 import Testimonials from "@/components/testimonials"
 import BlogSection from "@/components/blog-section"
+import OfficeLocations from "@/components/office-location"
 // import Contact from "@/components/contact"
 import Trustee from "@/components/trustees"
 
@@ -20,7 +21,7 @@ export default function Home() {
         <Consultation />
         <Team />
         <Testimonials />
-        <BlogSection />
+        <OfficeLocations />
         <Trustee />
       </main>
     </div>
