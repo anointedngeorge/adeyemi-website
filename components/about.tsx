@@ -9,7 +9,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500">About Our Company</h2>
           <div className="w-16 h-1 bg-blue-900 mx-auto mt-4 mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-dark/80">
-            {`With over 15 years of experience, we've been helping businesses transform and thrive in the digital age.`}
+            {`With over 40 years of experience, we've been helping businesses transform and thrive in the digital age.`}
           </p>
         </div>
 
@@ -27,17 +27,31 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold text-dark mb-6">Our Mission</h3>
             <p className="text-dark/80 mb-6">
-              {`We are dedicated to delivering innovative solutions that empower businesses to achieve their full
-              potential. Our mission is to be a trusted partner in your journey to success.`}
+              {`
+                  ADEYEMI APANPA & COMPANY./SENI NOMINEES is a composite firm of Certified National Accountants, Management and Financial Consultants. 
+                  The firm offers unique professional services to various organisations in Nigeria, including Commercial, non-commercial and Government establishments.
+              `}
+            </p>
+
+            <p className="text-dark/80 mb-6">
+              {`
+                  The firm has eight Principal Officers: Messrs S. A. Apanpa Fcna, Fcti, Adejoh Otama Elias Fcna, Acti S . A. Kure Can, Acti. 
+                  Adedotun Apanpa Cna. Ranti Fagbola Cna, Acti Danzy Yassar Asogya Cna, Acti and Orjiir Gbande Cna. They have behind them wealth of several 
+                  years of diverse experience in professional practice, 
+                  industry, commerce and financial institutions.
+              `}
             </p>
 
             <h3 className="text-2xl font-bold text-dark mb-6">Why Choose Us</h3>
             <ul className="space-y-4">
               {[
-                "Expert team with diverse industry experience",
-                "Tailored solutions to meet your specific needs",
-                "Commitment to excellence and innovation",
-                "Proven track record of successful partnerships",
+                "External Auditing/Investigation",
+                "Internal Auditing",
+                "Forensic Audit",
+                "Computer Audit",
+                "Accountancy & Reporting Accountants"
+
+
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-secondary mr-2 flex-shrink-0" />

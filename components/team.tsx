@@ -6,25 +6,25 @@ const teamMembers = [
   {
     name: "Adeyemi Apanpa FCNA, FCTI",
     role: "Principal  Partmer",
-    bio: "With over 40 years of experience in business leadership, Sarah drives our company vision and strategy.",
+    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  Association of   National Accountants of Nigeria (ANAN), FCNA, Chartered Institute of Taxation of   Nigeria (CITN), ACTI",
     image: "./img/p1.jpeg",
   },
   {
     name: "Elias Adejoh Otama FCNA, FCPA, ACTI",
     role: "Engagement Partner",
-    bio: "Michael brings 15 years of tech expertise, leading our innovation and digital transformation initiatives.",
+    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: Association of   National Accountants of Nigeria (ANAN), Chartered Institute of Taxation (CITN), CPA (England and Wales)",
     image: "./img/p2.jpeg",
   },
   {
     name: "Augustine Ranti Fagbola CNA, ACTI",
     role: "Audit Manager",
-    bio: "Emily has helped numerous Fortune 500 companies build and execute successful marketing strategies.",
+    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  ANAN, ACTI",
     image: "./img/p1.jpeg",
   },
   {
     name: "Adedotun Abiola Apanpa CNA, CCrFA",
     role: "Chief Financial Adviser",
-    bio: "David's financial acumen has been instrumental in our sustainable growth and fiscal responsibility.",
+    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  National Institute of Management (NIM)",
     image: "./img/p2.jpeg",
   },
 ]
