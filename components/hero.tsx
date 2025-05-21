@@ -60,11 +60,11 @@ export default function Hero() {
                   alt="Business professionals"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center">
+                <div className="absolute inset-0 bg-gray-950/55 flex items-center">
                   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-2xl text-white">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">{slide.title}</h1>
-                      <p className="text-lg md:text-xl text-white/90 mb-8">{slide.description}</p>
+                      <h1 className="text-4xl md:text-5xl lg:text-6xl shadow font-bold leading-tight mb-6">{slide.title}</h1>
+                      <p className="text-lg md:text-xl text-white/90 mb-8 shadow">{slide.description}</p>
                       <div className="flex flex-col sm:flex-row gap-4">
                         <Link href={slide.buttonLink}>
                           <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
