@@ -9,39 +9,26 @@ import Image from "next/image"
 const testimonials = [
   {
     quote:
-      "Working with CorpVision transformed our business operations. Their strategic insights and implementation support were invaluable to our growth.",
-    author: "Jennifer Lee",
-    position: "CEO, TechStart Inc.",
+      "The auditing service was incredibly thorough and professional. They identified gaps we weren’t even aware of and helped us streamline our internal processes. Their attention to detail gave us peace of mind knowing we’re fully compliant and running efficiently.",
+    author: "— Odinakachi Fortune ",
+    position: "Ceo Bolek Nigeria limited",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     quote:
-      "The team at CorpVision delivered beyond our expectations. Their attention to detail and commitment to excellence is unmatched in the industry.",
-    author: "Robert Martinez",
-    position: "COO, Global Solutions",
+      "Their accounting and tax team has been a lifesaver for our business. They made our year-end filing seamless and took the time to explain every detail. For the first time, we feel confident in our financial statements and tax obligations.",
+    author: "— Musa Ampule ",
+    position: "ADA Microfinance bank.",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     quote:
-      "CorpVision's innovative approach to our challenges resulted in a 40% increase in efficiency and significant cost savings across our operations.",
-    author: "Sophia Williams",
-    position: "CTO, Innovate Labs",
+      "Their financial consultants didn’t just crunch numbers — they gave us actionable insights. Thanks to their guidance, we’ve improved cash flow and have a clear roadmap for scaling our business sustainably.",
+    author: "Dr Kayode Fasua Ceo ANAN",
+    position: "Ceo ANAN (Association of National Accountants of Nig.",
     image: "/placeholder.svg?height=100&width=100",
   },
-  {
-    quote:
-      "We've been working with CorpVision for over 5 years now, and they continue to impress us with their forward-thinking strategies and reliable execution.",
-    author: "Michael Johnson",
-    position: "CFO, Enterprise Group",
-    image: "/placeholder.svg?height=100&width=100",
-  },
-  {
-    quote:
-      "The digital transformation led by CorpVision has revolutionized how we operate. Our productivity has increased by 35% in just six months.",
-    author: "Emily Chen",
-    position: "Director of Operations, TechGrowth",
-    image: "./img/avatar.png",
-  },
+  
 ]
 
 export default function Testimonials() {

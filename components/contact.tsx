@@ -82,7 +82,7 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-secondary mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-dark">Phone</h4>
-                      <p className="text-dark/70 mt-1">+1 (555) 123-4567</p>
+                      <p className="text-dark/70 mt-1">08034352515, 07085222227, 07010777824</p>
                     </div>
                   </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-secondary mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-dark">Email</h4>
-                      <p className="text-dark/70 mt-1">info@corpvision.com</p>
+                      <p className="text-dark/70 mt-1">apanpaservice@gmail.com</p>
                     </div>
                   </div>
                 </div>
