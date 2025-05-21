@@ -23,8 +23,8 @@ const teamMembers = [
   },
   {
     name: "Adedotun Abiola Apanpa CNA, CCrFA",
-    role: "Chief Financial Adviser",
-    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  National Institute of Management (NIM)",
+    role: "Chief Financial Officer",
+    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: National Institute of Management (NIM)",
     image: "./img/p2.jpeg",
   },
 ]

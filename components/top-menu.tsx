@@ -7,7 +7,7 @@ export default function TopMenu() {
         <div className="flex items-center">
           <Mail className="h-4 w-4 mr-2 text-secondary" />
           <a href="mailto:support@gmail.com" className="text-sm hover:text-secondary transition-colors">
-            support@gmail.com
+          apanpaservice@gmail.com
           </a>
         </div>
         <div className="flex space-x-4">
