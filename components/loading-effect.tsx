@@ -19,7 +19,7 @@ export default function LoadingEffect() {
     <AnimatePresence>
       {loading && (
         <motion.div
-          className="fixed inset-0 bg-gray-950/45 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-gray-950/10 z-50 flex items-center justify-center"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
