@@ -19,7 +19,7 @@ const teamMembers = [
   },
   {
     name: "Augustine Ranti Fagbola CNA, ACTI",
-    role: "Audit Manager",
+    role: "Engagement partner",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  ANAN, ACTI",
     image: "./img/n7.jpeg",
     image_to_top:false
