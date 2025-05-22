@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, MapPin, Phone, Clock, ArrowLeft } from "lucide-react"
 import OfficeLocations from "@/components/office-location"
+import {CONTACT_SETUP} from "@/components/configs"
+
 
 export default function ContactPage() {
   return (
@@ -41,11 +43,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium text-dark">Address</h3>
                         <p className="text-dark/70 mt-1">
-                          123 Business Avenue
-                          <br />
-                          Suite 500
-                          <br />
-                          New York, NY 10001
+                          {CONTACT_SETUP.address}
                         </p>
                       </div>
                     </div>
@@ -54,7 +52,7 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6 text-secondary mr-4 flex-shrink-0" />
                       <div>
                         <h3 className="font-medium text-dark">Phone</h3>
-                        <p className="text-dark/70 mt-1">+1 (555) 123-4567</p>
+                        <p className="text-dark/70 mt-1">{CONTACT_SETUP.phone}</p>
                       </div>
                     </div>
 
@@ -62,7 +60,7 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 text-secondary mr-4 flex-shrink-0" />
                       <div>
                         <h3 className="font-medium text-dark">Email</h3>
-                        <p className="text-dark/70 mt-1">info@corpvision.com</p>
+                        <p className="text-dark/70 mt-1">{CONTACT_SETUP.email}</p>
                       </div>
                     </div>
 
