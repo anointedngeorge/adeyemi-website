@@ -247,6 +247,8 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <OfficeLocations />
+
       {/* FAQ Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -292,7 +294,7 @@ export default function ContactPage() {
       </section>
 
 
-      <OfficeLocations />
+      
     </main>
   )
 }
