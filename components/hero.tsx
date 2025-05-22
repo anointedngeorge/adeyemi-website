@@ -22,7 +22,15 @@ const carouselSlides = [
       image: "./img/n5.jpg",
     buttonText: "Learn More",
     buttonLink: "#services",
-  }
+  },
+  {
+    title: "Innovative Solutions for Your Business",
+    description:
+      "We help businesses transform through technology and strategic innovation. Partner with us to achieve sustainable growth and operational excellence.",
+    image: "./img/sli3.jpeg",
+    buttonText: "Get Started",
+    buttonLink: "#contact",
+  },
 ]
 
 export default function Hero() {
