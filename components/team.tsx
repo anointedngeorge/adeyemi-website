@@ -7,25 +7,29 @@ const teamMembers = [
     name: "Adeyemi Apanpa FCNA, FCTI",
     role: "Principal  Partmer",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  Association of   National Accountants of Nigeria (ANAN), FCNA, Chartered Institute of Taxation of   Nigeria (CITN), ACTI",
-    image: "./img/p1.jpeg",
+    image: "./img/n2.jpg",
+    image_to_top:true
   },
   {
     name: "Elias Adejoh Otama FCNA, FCPA, ACTI",
     role: "Engagement Partner",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: Association of   National Accountants of Nigeria (ANAN), Chartered Institute of Taxation (CITN), CPA (England and Wales)",
-    image: "./img/p2.jpeg",
+    image: "./img/n6.jpeg",
+    image_to_top:true
   },
   {
     name: "Augustine Ranti Fagbola CNA, ACTI",
     role: "Audit Manager",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  ANAN, ACTI",
-    image: "./img/p1.jpeg",
+    image: "./img/n7.jpeg",
+    image_to_top:false
   },
   {
     name: "Adedotun Abiola Apanpa CNA, CCrFA",
     role: "Chief Financial Officer",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: National Institute of Management (NIM)",
-    image: "./img/p2.jpeg",
+    image: "./img/n8.jpeg",
+    image_to_top:false
   },
 ]
 
@@ -50,7 +54,7 @@ export default function Team() {
                                   height={100}
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
-                  className="object-cover w-full h-full"
+                  className={ member.image_to_top? "object-top object-cover w-full h-full" : "object-cover w-full h-full"}
                 />
               </div>
               <CardContent className="p-6 text-center">
