@@ -134,7 +134,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/70">
-          <p>© {new Date().getFullYear()} CorpVision. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ADEYEMI APANPA & COMPANY. All rights reserved.</p>
         </div>
       </div>
     </footer>
