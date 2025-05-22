@@ -8,7 +8,7 @@ export default function Consultation() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('./img/sli2.jpeg')",
+          backgroundImage: "url('./img/n3.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

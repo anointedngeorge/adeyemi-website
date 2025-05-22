@@ -11,7 +11,7 @@ const carouselSlides = [
     title: "Innovative Solutions for Your Business",
     description:
       "We help businesses transform through technology and strategic innovation. Partner with us to achieve sustainable growth and operational excellence.",
-    image: "./img/sli1.jpeg",
+    image: "./img/n4.jpg",
     buttonText: "Get Started",
     buttonLink: "#contact",
   },
@@ -19,7 +19,7 @@ const carouselSlides = [
     title: "Strategic Consulting for Growth",
     description:
       "Our expert team provides strategic guidance to help your business navigate complex challenges and identify opportunities for expansion.",
-      image: "./img/sli2.jpeg",
+      image: "./img/n5.jpg",
     buttonText: "Learn More",
     buttonLink: "#services",
   }
@@ -58,7 +58,7 @@ export default function Hero() {
                                       height={100}
                   src={slide.image || "/placeholder.svg"}
                   alt="Business professionals"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gray-950/55 flex items-center">
                   <div className="container mx-auto px-4 sm:px-6 lg:px-8">

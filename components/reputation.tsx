@@ -5,7 +5,7 @@ export default function Reputation() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('./img/sli2.jpeg')",
+          backgroundImage: "url('./img/n4.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

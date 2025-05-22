@@ -17,7 +17,7 @@ export default function About() {
           <div>
             <Image
               
-              src="./img/aboutus.jpeg"
+              src="./img/n2.jpg"
               alt="Our office space"
               className="rounded-lg shadow-lg"
               width={500}
