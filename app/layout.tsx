@@ -11,9 +11,12 @@ import LoadingEffect from "@/components/loading-effect"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CorpVision - Innovative Business Solutions",
-  description: "Professional corporate website offering innovative business solutions and strategic consulting.",
-    generator: 'v0.dev'
+  title: "ADEYEMI APANPA & COMPANY./SENI NOMINEES",
+  description: "ADEYEMI APANPA & COMPANY./SENI NOMINEES is a composite firm of Certified National Accountants, Management and Financial Consultants. The firm offers unique professional services to various organisations in Nigeria, including Commercial, non-commercial and Government establishments.",
+  generator: 'Sharashell',
+  icons: {
+    icon: './img/logo_favicon.png',
+  },
 }
 
 export default function RootLayout({
