@@ -233,7 +233,7 @@ export default function ContactPage() {
 
           <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425882426698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1622568056894!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126845.0!2d7.4996!3d9.0356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1622568056894!5m2!1sen!2sng"
               width="100%"
               height="100%"
               style={{ border: 0 }}
