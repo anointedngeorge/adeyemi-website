@@ -33,17 +33,17 @@ const teamMembers = [
   },
 ]
 
-export default function Team() {
+export default function Team({show_heading=true}) {
   return (
     <section id="team" className="py-20 bg-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        {show_heading && (<div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500">Our Leadership Team</h2>
           <div className="w-16 h-1 bg-blue-900 mx-auto mt-4 mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-dark/80">
             {`Meet the experienced professionals who guide our company's vision and strategy.`}
           </p>
-        </div>
+        </div>)}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (

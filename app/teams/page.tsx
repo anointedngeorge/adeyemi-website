@@ -1,9 +1,6 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft } from "lucide-react"
-import Image from "next/image"
-import Services from "@/components/services"
+import Team from "@/components/team"
 
 
 
@@ -14,7 +11,7 @@ export default function ServicesPage() {
       <section className="relative py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">Our Teams</h1>
             <p className="max-w-3xl mx-auto text-lg text-dark/80">
              {` Comprehensive business solutions tailored to help your organization thrive in today's competitive
               landscape.`}
@@ -28,7 +25,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services List */}
-      <Services show_heading={false} />
+      <Team show_heading={false} />
 
      
     </main>

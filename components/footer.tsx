@@ -3,10 +3,29 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import Image from "next/image"
 import {CONTACT_SETUP} from "./configs"
 import Logo from "./logo"
+import { Button } from "./ui/button"
 
 export default function Footer() {
   
   return (
+    
+    <>
+     {/* CTA Section */}
+     <section className="py-16 bg-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+          <p className="max-w-2xl mx-auto text-white/80 mb-8">
+            Contact us today to discuss how our services can help you achieve your business goals.
+          </p>
+          <Link href="/contact">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
+              Get in Touch
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      
     <footer className="bg-dark text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -119,5 +138,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

@@ -36,18 +36,18 @@ const services = [
   
 ]
 
-export default function Services() {
+export default function Services({show_heading=true}) {
   return (
     <section id="services" className="py-20 bg-primary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+      {show_heading && (<div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500">Our Services</h2>
           <div className="w-16 h-1 bg-blue-900 mx-auto mt-4 mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-dark">
             {`We offer a comprehensive range of services designed to help your business thrive in today's competitive
             landscape.`}
           </p>
-        </div>
+        </div>)}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

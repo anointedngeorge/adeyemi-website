@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, MapPin, Phone, Clock, ArrowLeft } from "lucide-react"
+import OfficeLocations from "@/components/office-location"
 
 export default function ContactPage() {
   return (
@@ -289,6 +290,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+
+      <OfficeLocations />
     </main>
   )
 }
