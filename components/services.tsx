@@ -3,40 +3,74 @@ import Image from "next/image"
 
 const services = [
   {
-    title: "Statutory Audits",
+    title: "External Auditing/Investigation",
     description:
       "Preparation and presentation of Financial Statements of registered entities are the responsibilities of such entities.",
       image: "./img/s1.jpg",
   },
   {
-    title: "Accountancy Services",
+    title: "Internal Auditing",
     description: "Installation of accounting systems, incorporating cash books, petty cash books, general ledgers, extraction of Trial Balance and preparation of final accounts",
     image: "./img/s2.jpg",
   },
   {
-    title: "Taxation Services",
+    title: "Forensic Audit",
     description: "IAdvisory services on the preparation of tax computations that satisfy the requirements of the Relevant Tax Authorities",
     image: "./img/s3.jpg",
   },
   {
-    title: "Computerization Tools",
+    title: "Computer Audit",
     description: "Efficient and effective management of business today is a function of the reliability of the internal control and accounting system in place in an organization.",
     image: "./img/s4.jpg",
   },
   {
-    title: "Manpower Development And Training",
+    title: "Accountancy",
     description: "Personnel recruitment, Selection and Placement and job evaluation for our clients.",
     image: "./img/s5.jpg",
   },
   {
-    title: "The Firm’s Approach to Assignments",
+    title: "Reporting Accountants",
+    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    image: "./img/s2.jpg",
+  },
+  
+  {
+    title: "Taxation",
     description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
     image: "./img/s6.jpg",
   },
-  
+
+
+  {
+    title: "Financial Training",
+    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    image: "./img/s1.jpg",
+  },
+
+
+  {
+    title: "Management & Financial Consultancy",
+    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    image: "./img/s6.jpg",
+  },
+
+  {
+    title: "Excess Bank Charges",
+    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    image: "./img/s5.jpg",
+  },
+
+
+  {
+    title: "Overnight Credit Balance",
+    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    image: "./img/s2.jpg",
+  },
+
+
 ]
 
-export default function Services({show_heading=true}) {
+export default function Services({show_heading=true, start=0, end=6}) {
   return (
     <section id="services" className="py-20 bg-primary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +84,7 @@ export default function Services({show_heading=true}) {
         </div>)}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services?.slice(start,end).map((service, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-full h-48 overflow-hidden">
                 <Image

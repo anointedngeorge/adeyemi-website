@@ -28,7 +28,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services List */}
-      <Services show_heading={false} />
+      <Services show_heading={false} end={1000000} />
 
      
     </main>

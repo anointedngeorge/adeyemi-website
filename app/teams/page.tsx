@@ -25,7 +25,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services List */}
-      <Team show_heading={false} />
+      <Team show_heading={false} end={100000} />
 
      
     </main>

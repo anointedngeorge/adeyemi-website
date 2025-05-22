@@ -28,6 +28,9 @@ export default function Navbar() {
             <Link href="/" className="text-dark hover:text-secondary">
               Home
             </Link>
+            <Link href="/about" className="text-dark hover:text-secondary">
+              About
+            </Link>
             <Link href="/services" className="text-dark hover:text-secondary">
               Services
             </Link>

@@ -9,6 +9,7 @@ import BlogSection from "@/components/blog-section"
 import OfficeLocations from "@/components/office-location"
 // import Contact from "@/components/contact"
 import Trustee from "@/components/trustees"
+import OurClients from "@/components/our-clients"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Services />
         <Consultation />
         <Team />
+        <OurClients />
         <Testimonials />
         <OfficeLocations />
         <Trustee />

@@ -33,7 +33,7 @@ const teamMembers = [
   },
 ]
 
-export default function Team({show_heading=true}) {
+export default function Team({show_heading=true, start=0, end=4}) {
   return (
     <section id="team" className="py-20 bg-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function Team({show_heading=true}) {
         </div>)}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
+          {teamMembers?.slice(start, end).map((member, index) => (
             <Card key={index} className="border-0 shadow-lg overflow-hidden">
               <div className="aspect-square relative">
                 <Image
