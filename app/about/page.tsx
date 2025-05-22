@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">About Our Company</h1>
               <p className="text-lg text-dark/80 mb-8">
-                With over 15 years of experience, we've been helping businesses transform and thrive through our
+                With over 40 years of experience, we've been helping businesses transform and thrive through our
                 comprehensive range of professional services.
               </p>
               <Link href="/" className="inline-flex items-center text-secondary hover:text-secondary/80">
