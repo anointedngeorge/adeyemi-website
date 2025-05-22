@@ -21,10 +21,10 @@ export default function Consultation() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto bg-dark/50 backdrop-blur-sm p-8 rounded-lg">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-md">
+          <h2 className="text-lg lg:text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-md">
             Still Confused About Our Features? Get A Consultation
           </h2>
-          <p className="text-lg text-white mb-8 drop-shadow-md">
+          <p className="text-sm md:text-lg lg:text-lg text-white mb-8 drop-shadow-md">
             We are open to help you solve that financial accounting issues. A consultation will just be fine to handle
             all cases.
           </p>
