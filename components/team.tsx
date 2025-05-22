@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Adeyemi Apanpa FCNA, FCTI",
     role: "Principal  Partmer",
     bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  Association of   National Accountants of Nigeria (ANAN), FCNA, Chartered Institute of Taxation of   Nigeria (CITN), ACTI",
-    image: "./img/n2.jpg",
+    image: "./img/n0.jpeg",
     image_to_top:true
   },
   {
