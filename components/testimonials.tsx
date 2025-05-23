@@ -11,21 +11,21 @@ const testimonials = [
     quote:
       "The auditing service was incredibly thorough and professional. They identified gaps we weren’t even aware of and helped us streamline our internal processes. Their attention to detail gave us peace of mind knowing we’re fully compliant and running efficiently.",
     author: "— Odinakachi Fortune ",
-    position: "Ceo Bolek Nigeria limited",
+    position: "CEO Bolek Nigeria limited",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     quote:
       "Their accounting and tax team has been a lifesaver for our business. They made our year-end filing seamless and took the time to explain every detail. For the first time, we feel confident in our financial statements and tax obligations.",
     author: "— Musa Ampule ",
-    position: "ADA Microfinance bank.",
+    position: "MD, ADA Microfinance bank.",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     quote:
       "Their financial consultants didn’t just crunch numbers — they gave us actionable insights. Thanks to their guidance, we’ve improved cash flow and have a clear roadmap for scaling our business sustainably.",
-    author: "Dr Kayode Fasua Ceo ANAN",
-    position: "Ceo ANAN (Association of National Accountants of Nig.",
+    author: "Dr Kayode Fasua CEO ANAN",
+    position: "CEO ANAN (Association of National Accountants of Nig.",
     image: "/placeholder.svg?height=100&width=100",
   },
   

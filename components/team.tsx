@@ -6,28 +6,28 @@ const teamMembers = [
   {
     name: "Adeyemi Apanpa FCNA, FCTI",
     role: "Principal  Partmer",
-    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  Association of   National Accountants of Nigeria (ANAN), FCNA, Chartered Institute of Taxation of   Nigeria (CITN), ACTI",
+    bio: "MEMBERSHIP OF PROFESSIONAL SOCIETIES:  Association of   National Accountants of Nigeria (ANAN), FCNA, Chartered Institute of Taxation of   Nigeria (CITN), ACTI",
     image: "./img/n0.jpeg",
     image_to_top:true
   },
   {
     name: "Elias Adejoh Otama FCNA, FCPA, ACTI",
     role: "Engagement Partner",
-    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: Association of   National Accountants of Nigeria (ANAN), Chartered Institute of Taxation (CITN), CPA (England and Wales)",
+    bio: "MEMBERSHIP OF PROFESSIONAL SOCIETIES: Association of   National Accountants of Nigeria (ANAN), Chartered Institute of Taxation (CITN), CPA (England and Wales)",
     image: "./img/n6.jpeg",
     image_to_top:true
   },
   {
     name: "Augustine Ranti Fagbola CNA, ACTI",
     role: "Engagement partner",
-    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES:  ANAN, ACTI",
+    bio: "MEMBERSHIP OF PROFESSIONAL SOCIETIES:  ANAN, ACTI",
     image: "./img/n7.jpeg",
     image_to_top:false
   },
   {
     name: "Adedotun Abiola Apanpa CNA, CCrFA",
     role: "Chief Financial Officer",
-    bio: "MEMBERSHIP IN PROFESSIONAL SOCIETIES: National Institute of Management (NIM)",
+    bio: "MEMBERSHIP OF PROFESSIONAL SOCIETIES: National Institute of Management (NIM)",
     image: "./img/n8.jpeg",
     image_to_top:false
   },

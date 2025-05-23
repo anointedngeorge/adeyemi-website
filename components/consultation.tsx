@@ -25,7 +25,7 @@ export default function Consultation() {
             Still Confused About Our Features? Get A Consultation
           </h2>
           <p className="text-sm md:text-lg lg:text-lg text-white mb-8 drop-shadow-md">
-            We are open to help you solve that financial accounting issues. A consultation will just be fine to handle
+            We are open to help you solve those financial accounting issues. A consultation will just be fine to handle
             all cases.
           </p>
           <Link href="#contact">

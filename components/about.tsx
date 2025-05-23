@@ -9,7 +9,7 @@ export default function About() {
           <h2 className="text-2xl lg:text-3xl md:text-4xl font-bold text-blue-500">About Our Company</h2>
           <div className="w-16 h-1 bg-blue-900 mx-auto mt-4 mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-dark/80">
-            {`With over 40 years of experience, we've been helping businesses transform and thrive in the digital age.`}
+            {`With over 40 years of experience, we have been helping businesses transform and thrive in the digital age.`}
           </p>
         </div>
 
@@ -28,26 +28,26 @@ export default function About() {
             <h3 className="text-2xl font-bold text-dark mb-6">Our Mission</h3>
             <p className="text-dark/80 mb-6">
               {`
-                  ADEYEMI APANPA & COMPANY./SENI NOMINEES is a composite firm of Certified National Accountants, Management and Financial Consultants. 
+                  ADEYEMI APANPA & COMPANY/SENI NOMINEES is a composite Firm of Certified National Accountants, Management and Financial Consultants. 
                   The firm offers unique professional services to various organisations in Nigeria, including Commercial, non-commercial and Government establishments.
               `}
             </p>
 
             <p className="text-dark/80 mb-6">
               {`
-                  The firm has eight Principal Officers: Messrs S. A. Apanpa Fcna, Fcti, Adejoh Otama Elias Fcna, Acti S . A. Kure Can, Acti. 
-                  Adedotun Apanpa Cna. Ranti Fagbola Cna, Acti Danzy Yassar Asogya Cna, Acti and Orjiir Gbande Cna. They have behind them wealth of several 
+                  The firm has eight Principal Officers: Messrs Stanly Abrahm Kure. Apanpa FCNA, FCTI, Adejoh Otama Elias FCNA, ACTI Stanly Abrahm Kure CAN, ACTI. 
+                  Adedotun Apanpa CNA. Ranti Fagbola CNA, ACTI Danzy Yassar Asogya CNA, ACTI and Orjiir Gbande CNA. They have behind them wealth of several 
                   years of diverse experience in professional practice, 
                   industry, commerce and financial institutions.
               `}
             </p>
 
-            <h3 className="text-2xl font-bold text-dark mb-6">Why Choose Us</h3>
+            <h3 className="text-2xl font-bold text-dark mb-6">Why Depending on us for: </h3>
             <ul className="space-y-4">
               {[
                 "External Auditing/Investigation",
                 "Internal Auditing",
-                "Forensic Audit",
+                "Forensic Audit/Advisory",
                 "Computer Audit",
                 "Accountancy & Reporting Accountants"
 

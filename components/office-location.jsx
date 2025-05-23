@@ -9,7 +9,7 @@ const offices = [
   },
   {
     name: "BENUE OFFICE",
-    address: "House No. 4, Adeyemi Apanpa Avenue Off Inikpi Street. High Level P. O. Box 2175, Makurdi",
+    address: "House No. 4, Adeyemi Apanpa House Off Inikpi Street. High Level P. O. Box 2175, Makurdi",
     phone: "070 3308 3691",
   },
   {

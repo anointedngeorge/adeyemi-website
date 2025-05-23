@@ -7,7 +7,7 @@ import { Building, Briefcase, Users, CheckCircle } from "lucide-react"
 const clientCategories = [
   {
     id: "federal",
-    name: "Federal Government",
+    name: "State Government",
     icon: <Building className="h-6 w-6" />,
     clients: [
       "Federal Medical Centre, Keffi",
@@ -15,6 +15,7 @@ const clientCategories = [
       "National Agricultural Foundation of Nigeria (NAFN)",
       "Federal Medical Centre, Makurdi",
       "Hospital Management Board",
+      "Kano State Government",
       "Local Government Pension Board",
     ],
   },
@@ -152,7 +153,7 @@ export default function OurClients({show_heading=true}) {
 
               <div className="mt-8 text-center">
                 <p className="text-dark/70 italic">
-                  These are just some of our valued clients in the {category.name.toLowerCase()} sector.
+                  These are just some of our valued clients in both state and federal gevernment.
                 </p>
               </div>
             </div>
