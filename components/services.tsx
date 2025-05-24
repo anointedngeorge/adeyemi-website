@@ -5,70 +5,71 @@ const services = [
   {
     title: "External Auditing/Investigation",
     description:
-      "Preparation and presentation of Financial Statements of registered entities are the responsibilities of such entities.",
-      image: "./img/s1.jpg",
+      "We conduct independent assessments of financial statements to ensure they present a true and fair view, helping entities meet their statutory responsibilities and build stakeholder confidence.",
+    image: "./img/s1.jpg",
   },
   {
     title: "Internal Auditing",
-    description: "Installation of accounting systems, incorporating cash books, petty cash books, general ledgers, extraction of Trial Balance and preparation of final accounts",
+    description:
+      "We design and implement comprehensive accounting systems—covering cash books, ledgers, and trial balances—to enhance internal controls and support accurate financial reporting.",
     image: "./img/s2.jpg",
   },
   {
     title: "Forensic Audit",
-    description: "IAdvisory services on the preparation of tax computations that satisfy the requirements of the Relevant Tax Authorities",
+    description:
+      "We offer investigative accounting services aimed at uncovering fraud, financial discrepancies, or misconduct, supporting both legal processes and internal reviews.",
     image: "./img/s3.jpg",
   },
   {
     title: "Computer Audit",
-    description: "Efficient and effective management of business today is a function of the reliability of the internal control and accounting system in place in an organization.",
+    description:
+      "Our audit solutions assess IT systems to ensure their integrity, security, and alignment with accounting practices—crucial for effective decision-making and operational reliability.",
     image: "./img/s4.jpg",
   },
   {
     title: "Accountancy",
-    description: "Personnel recruitment, Selection and Placement and job evaluation for our clients.",
+    description:
+      "We provide full-spectrum accountancy services including financial recordkeeping, payroll, and personnel management, tailored to streamline client operations.",
     image: "./img/s5.jpg",
   },
   {
     title: "Reporting Accountants",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "We deliver tailored assurance services and specialized reports for clients involved in public offerings, acquisitions, or financial restructuring, ensuring compliance and stakeholder clarity.",
     image: "./img/s2.jpg",
   },
-  
   {
     title: "Taxation",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "We offer expert tax advisory and compliance services, including the preparation of tax computations in accordance with local tax regulations, helping clients manage their obligations effectively.",
     image: "./img/s6.jpg",
   },
-
-
   {
     title: "Financial Training",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "Our training programs are designed to enhance the financial literacy and operational skills of individuals and corporate teams, with a focus on real-world applications and regulatory compliance.",
     image: "./img/s1.jpg",
   },
-
-
   {
     title: "Management & Financial Consultancy",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "We provide strategic advice on business planning, financial structuring, and performance optimization to help organizations achieve long-term sustainability and growth.",
     image: "./img/s6.jpg",
   },
-
   {
     title: "Excess Bank Charges",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "We analyze banking transactions to identify and recover excess charges, helping clients minimize unnecessary costs and improve cash flow management.",
     image: "./img/s5.jpg",
   },
-
-
   {
     title: "Overnight Credit Balance",
-    description: "The Firm’s Approach to Assignments The Firm’s philosophy and approach is determined by the need to customize services to the needs of our clients",
+    description:
+      "We review overnight credit arrangements to ensure proper reconciliation, minimize risk, and maintain efficient use of credit facilities.",
     image: "./img/s2.jpg",
   },
+];
 
-
-]
 
 export default function Services({show_heading=true, start=0, end=6}) {
   return (
