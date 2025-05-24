@@ -3,7 +3,7 @@
 export const  CONTACT_SETUP = {
         email: "apanpaservice@gmail.com",
         phone: "08034352515, 07085222227, 07010777824",
-        address: "Shakir Plaza, Area 11 Abuja House No. 4, No. 103 Makurdi Road, Lafia"
+        address: "4 ADEYEMI APANPA AVENUE, BEHIND DEEPER LIFE CHURCH, HIGH LEVEL, MAKURDI, BENUE STATE. NIGERIA"
 }
 
 export const SERVICES =[
