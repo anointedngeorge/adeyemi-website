@@ -1,9 +1,10 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import Image from "next/image"
-import {CONTACT_SETUP} from "./configs"
+import {CONTACT_SETUP, SERVICES, NAVIGATION, FOOTER_SHORT_DESCRIPTION} from "./configs"
 import Logo from "./logo"
 import { Button } from "./ui/button"
+
 
 export default function Footer() {
   
@@ -35,7 +36,7 @@ export default function Footer() {
             <Logo classname="lg:w-36 lg:h-30 w-44  sm:w-28 sm:h-24" />
             </Link>
             <p className="mt-4 text-white/70">
-              Empowering businesses through innovative solutions and strategic partnerships.
+              {FOOTER_SHORT_DESCRIPTION}
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="text-white/50 hover:text-secondary">
@@ -60,21 +61,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="#about" className="text-white/70 hover:text-secondary">
-                  About Us
-                </Link>
+
+            {NAVIGATION.map((nav, index) => (
+                <li key={`footer_nav_${index}`}>
+                    <Link href={`${nav.url}`} className="text-white/70 hover:text-secondary">
+                        {nav.name}
+                    </Link>
               </li>
-              <li>
-                <Link href="#services" className="text-white/70 hover:text-secondary">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#team" className="text-white/70 hover:text-secondary">
-                  Our Team
-                </Link>
-              </li>
+            ))}
+              
+              
               <li>
                 <Link href="#testimonials" className="text-white/70 hover:text-secondary">
                   Testimonials
@@ -91,31 +87,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#services" className="text-white/70 hover:text-secondary">
-                  Strategic Consulting
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-white/70 hover:text-secondary">
-                  Digital Transformation
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-white/70 hover:text-secondary">
-                  Market Analysis
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-white/70 hover:text-secondary">
-                  Business Development
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-white/70 hover:text-secondary">
-                  Global Expansion
-                </a>
-              </li>
+              {SERVICES?.slice(0,6).map((service, index) => (
+                <li key={`footer_${index}`}>
+                  <Link href="#services" className="text-white/70 hover:text-secondary">
+                    {service?.title}
+                  </Link>
+                </li>
+              ))}
+              
             </ul>
           </div>
 

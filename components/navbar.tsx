@@ -6,6 +6,10 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import Logo from "./logo"
+import { NAVIGATION } from "./configs"
+
+const navigation = NAVIGATION
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,24 +29,12 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-dark hover:text-secondary">
-              Home
-            </Link>
-            <Link href="/about" className="text-dark hover:text-secondary">
-              About
-            </Link>
-            <Link href="/services" className="text-dark hover:text-secondary">
-              Services
-            </Link>
-            <Link href="/gallery" className="text-dark hover:text-secondary">
-              Gallery
-            </Link>
-            <Link href="/teams" className="text-dark hover:text-secondary">
-              Team
-            </Link>
-            {/* <Link href="/blog" className="text-dark hover:text-secondary">
-              News
-            </Link> */}
+            {navigation.map((nav, index) => (
+                <Link key={`nav_${index}`} href={`${nav.url}`} className="text-dark hover:text-secondary">
+                  {nav?.name}
+              </Link>
+            ))}
+            
             <Link href="/contact">
               <Button className="bg-secondary hover:bg-secondary/90 text-white">Contact Us</Button>
             </Link>
