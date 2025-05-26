@@ -11,7 +11,27 @@ import OfficeLocations from "@/components/office-location"
 import Trustee from "@/components/trustees"
 import OurClients from "@/components/our-clients"
 
+
+import path from "path"
+import fs from 'fs';
+// import { GetStaticProps } from 'next';
+
+
+const getfiles = async () => {
+  const dir = path.join(process.cwd(), 'public/trustees');
+  const files = fs.readdirSync(dir);
+
+  return files;
+};
+
+let filelist:string[] = [];
+  const files = getfiles();
+      files.then((file) => {
+          file.map(item => filelist.push(item))
+      })  
+
 export default function Home() {
+  
   return (
     <div className="min-h-screen bg-white">
       <main>
@@ -24,7 +44,7 @@ export default function Home() {
         <OurClients />
         <Testimonials />
         <OfficeLocations />
-        <Trustee />
+        <Trustee files={filelist} />
       </main>
     </div>
   )

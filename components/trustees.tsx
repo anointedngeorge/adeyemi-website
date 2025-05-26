@@ -6,41 +6,50 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
-const testimonials = [
-  {
-    quote:
-      "Working with CorpVision transformed our business operations. Their strategic insights and implementation support were invaluable to our growth.",
-    author: "Jennifer Lee",
-    position: "CEO, TechStart Inc.",
-    image: "./img/trustee1.png",
-  },
-  {
-    quote:
-      "The team at CorpVision delivered beyond our expectations. Their attention to detail and commitment to excellence is unmatched in the industry.",
-    author: "Robert Martinez",
-    position: "COO, Global Solutions",
-    image: "./img/trustee2.jpg",
-  },
-  {
-    quote:
-      "CorpVision's innovative approach to our challenges resulted in a 40% increase in efficiency and significant cost savings across our operations.",
-    author: "Sophia Williams",
-    position: "CTO, Innovate Labs",
-    image: "./img/trustee3.jpg",
-  },
-  {
-    quote:
-      "We've been working with CorpVision for over 5 years now, and they continue to impress us with their forward-thinking strategies and reliable execution.",
-    author: "Michael Johnson",
-    position: "CFO, Enterprise Group",
-    image: "./img/trustee4.jpg",
-  }
-]
 
-export default function Trustee() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [visibleTestimonials, setVisibleTestimonials] = useState(3)
 
+
+interface FilesFc {
+    files:string[]
+}
+
+
+// const testimonials = [
+//   {
+//     quote:
+//       "Working with CorpVision transformed our business operations. Their strategic insights and implementation support were invaluable to our growth.",
+//     author: "Jennifer Lee",
+//     position: "CEO, TechStart Inc.",
+//     image: "./img/trustee1.png",
+//   },
+//   {
+//     quote:
+//       "The team at CorpVision delivered beyond our expectations. Their attention to detail and commitment to excellence is unmatched in the industry.",
+//     author: "Robert Martinez",
+//     position: "COO, Global Solutions",
+//     image: "./img/trustee2.jpg",
+//   },
+//   {
+//     quote:
+//       "CorpVision's innovative approach to our challenges resulted in a 40% increase in efficiency and significant cost savings across our operations.",
+//     author: "Sophia Williams",
+//     position: "CTO, Innovate Labs",
+//     image: "./img/trustee3.jpg",
+//   },
+//   {
+//     quote:
+//       "We've been working with CorpVision for over 5 years now, and they continue to impress us with their forward-thinking strategies and reliable execution.",
+//     author: "Michael Johnson",
+//     position: "CFO, Enterprise Group",
+//     image: "./img/trustee4.jpg",
+//   }
+// ]
+
+export default function Trustee({files}:FilesFc) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleTestimonials, setVisibleTestimonials] = useState(3);
+  // const [files, setFiles] = useState<FilesFc[]>([]);
+  const testimonials = files;
   // Update visible testimonials based on screen size
   useEffect(() => {
     const handleResize = () => {
@@ -92,16 +101,16 @@ export default function Trustee() {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * (100 / visibleTestimonials)}%)` }}
             >
-              {testimonials.map((testimonial, index) => (
+              {files.map((file:string, index:number) => (
                 <div key={index} className="px-4" style={{ flex: `0 0 ${100 / visibleTestimonials}%` }}>
                   <Card className="border-0 shadow-lg h-full">
                     <CardContent className="p-8">
                     <Image
                                       width={100}
                                       height={100}
-                          src={testimonial.image || "/placeholder.svg"}
-                          alt={testimonial.author}
-                          className="h-100 w-full rounded-lg mr-4"
+                          src={`./trustees/${file}` || "/placeholder.svg"}
+                          alt={file}
+                          className="h-full w-full rounded-lg mr-4"
                         />
                     </CardContent>
                   </Card>
