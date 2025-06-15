@@ -2,7 +2,7 @@ export const BASE_URL=process.env.NEXT_PUBLIC_ENVIRONMENT === 'production'
 ? process.env.NEXT_PUBLIC_BASEURL_PROD
 : process.env.NEXT_PUBLIC_BASEURL_DEV;
 
-console.log(BASE_URL, "base url");
+console.log(BASE_URL, "base urls");
 
 export const TOKEN = globalThis?.sessionStorage?.getItem("api_key_token");
 
