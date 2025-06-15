@@ -1,4 +1,9 @@
-export const BASE_URL="http://127.0.0.1:9001/v1";
+export const BASE_URL=process.env.NEXT_PUBLIC_ENVIRONMENT === 'production'
+? process.env.NEXT_PUBLIC_BASEURL_PROD
+: process.env.NEXT_PUBLIC_BASEURL_DEV;
+
+console.log(BASE_URL, "base url");
+
 export const TOKEN = globalThis?.sessionStorage?.getItem("api_key_token");
 
 
