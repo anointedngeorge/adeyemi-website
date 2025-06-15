@@ -1,8 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import { X, ChevronLeft, ChevronRight, Calendar, MapPin, ArrowLeft } from "lucide-react"
+import Image from "next/image"
 
 // Gallery images data
 const galleryImages = [
@@ -76,20 +77,23 @@ export default function GalleryPage() {
     setSelectedImage(null)
   }
 
-  const navigateImage = (direction: "prev" | "next") => {
-    if (selectedImage === null) return
-
-    const currentIndex = galleryImages.findIndex((img) => img.id === selectedImage)
-    let newIndex
-
-    if (direction === "prev") {
-      newIndex = currentIndex > 0 ? currentIndex - 1 : galleryImages.length - 1
-    } else {
-      newIndex = currentIndex < galleryImages.length - 1 ? currentIndex + 1 : 0
-    }
-
-    setSelectedImage(galleryImages[newIndex].id)
-  }
+  const navigateImage = useCallback(
+    (direction: "prev" | "next") => {
+      if (selectedImage === null) return
+  
+      const currentIndex = galleryImages.findIndex((img) => img.id === selectedImage)
+      let newIndex
+  
+      if (direction === "prev") {
+        newIndex = currentIndex > 0 ? currentIndex - 1 : galleryImages.length - 1
+      } else {
+        newIndex = currentIndex < galleryImages.length - 1 ? currentIndex + 1 : 0
+      }
+  
+      setSelectedImage(galleryImages[newIndex].id)
+    },
+    [selectedImage]
+  )
 
   const selectedImageData = selectedImage ? galleryImages.find((img) => img.id === selectedImage) : null
 
@@ -109,7 +113,7 @@ export default function GalleryPage() {
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [selectedImage])
+  }, [selectedImage, navigateImage])
 
   return (
     <main className="min-h-screen bg-white">
@@ -141,7 +145,9 @@ export default function GalleryPage() {
                 onClick={() => openModal(image.id)}
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
+                  <Image
+                  width={20}
+                  height={20}
                     src={image.src || "/placeholder.svg"}
                     alt={image.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -202,7 +208,9 @@ export default function GalleryPage() {
 
             {/* Image */}
             <div className="bg-white rounded-lg overflow-hidden">
-              <img
+              <Image
+                width={20}
+                height={20}
                 src={selectedImageData.src || "/placeholder.svg"}
                 alt={selectedImageData.title}
                 className="w-full h-auto max-h-[70vh] object-contain"

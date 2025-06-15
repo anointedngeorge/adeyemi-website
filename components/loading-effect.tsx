@@ -33,7 +33,7 @@ export default function LoadingEffect() {
               transition={{ duration: 0.5 }}
             >
               {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Adeyemi & Co</h1> */}
-              <Image alt="ADEYEMI APANPA & COMPANY/SENI NOMINEES" src={"./img/logo_2.png"} width={20} height={20} className="w-20 h-20 rounded-full" />
+              <Image alt="ADEYEMI APANPA & COMPANY/SENI NOMINEES" src={"../img/logo_2.png"} width={20} height={20} className="w-20 h-20 rounded-full" />
               {/* <div className="w-16 h-1 bg-secondary mx-auto mb-6"></div> */}
             </motion.div>
 

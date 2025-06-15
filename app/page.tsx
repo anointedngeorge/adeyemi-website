@@ -5,7 +5,7 @@ import Services from "@/components/services"
 import Consultation from "@/components/consultation"
 import Team from "@/components/team"
 import Testimonials from "@/components/testimonials"
-import BlogSection from "@/components/blog-section"
+// import BlogSection from "@/components/blog-section"
 import OfficeLocations from "@/components/office-location"
 // import Contact from "@/components/contact"
 import Trustee from "@/components/trustees"
@@ -24,11 +24,11 @@ const getfiles = async () => {
   return files;
 };
 
-let filelist:string[] = [];
-  const files = getfiles();
-      files.then((file) => {
-          file.map(item => filelist.push(item))
-      })  
+const filelist:string[] = [];
+const files = getfiles();
+    files.then((file) => {
+        file.map(item => filelist.push(item))
+    })  
 
 export default function Home() {
   

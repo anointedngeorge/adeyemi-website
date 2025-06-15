@@ -1,9 +1,8 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
   ArrowLeft,
-  ArrowRight,
   BookOpen,
   Building,
   Calculator,
@@ -13,6 +12,7 @@ import {
   LineChart,
 } from "lucide-react"
 import Team from "@/components/team"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -24,8 +24,8 @@ export default function AboutPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">About Our Company</h1>
               <p className="text-lg text-dark/80 mb-8">
-                With over 40 years of experience, we've been helping businesses transform and thrive through our
-                comprehensive range of professional services.
+                {`With over 40 years of experience, we've been helping businesses transform and thrive through our
+                comprehensive range of professional services.`}
               </p>
               <Link href="/" className="inline-flex items-center text-secondary hover:text-secondary/80">
                 <ArrowLeft className="mr-2 h-4 w-4" />
@@ -33,7 +33,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <div className="hidden lg:block">
-              <img
+              <Image
                 src="./img/n2.jpg"
                 alt="Our team at work"
                 className="rounded-lg shadow-lg"
@@ -52,8 +52,8 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-dark">Our Expertise</h2>
             <div className="w-16 h-1 bg-secondary mx-auto mt-4 mb-6"></div>
             <p className="max-w-3xl mx-auto text-lg text-dark/80">
-              We provide a comprehensive range of professional services designed to help your business succeed in
-              today's competitive landscape.
+              {`We provide a comprehensive range of professional services designed to help your business succeed in
+              today's competitive landscape.`}
             </p>
           </div>
 
@@ -107,9 +107,9 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-dark">Training Services</h2>
               </div>
               <p className="text-dark/80 mb-6">
-                One of the benefits of the formal training programme which we provide for our staff and which is
+                {`One of the benefits of the formal training programme which we provide for our staff and which is
                 organized by our own internal training department assisted by specialist partners and managers, is that
-                we are able to offer places on our courses, as appropriate, for the staff of our clients.
+                we are able to offer places on our courses, as appropriate, for the staff of our clients.`}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -131,7 +131,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <img
+              <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Training session"
                 className="rounded-lg shadow-lg"
@@ -148,7 +148,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
+              <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Management consulting"
                 className="rounded-lg shadow-lg"
@@ -164,9 +164,9 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-dark">Management Consultancy Services</h2>
               </div>
               <p className="text-dark/80 mb-6">
-                Our associate wholly owned Management Consultancy Company SENI NOMINEES, has developed highly respected
+                {`Our associate wholly owned Management Consultancy Company SENI NOMINEES, has developed highly respected
                 management consultancy services in Nigeria, services currently being provided cover the following
-                fields:
+                fields:`}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -209,10 +209,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-dark">Taxation Services</h2>
               </div>
               <p className="text-dark/80 mb-6">
-                Our firm gets involve right from the word go in the Tax Planning of all our clients unlike the
+                {`Our firm gets involve right from the word go in the Tax Planning of all our clients unlike the
                 traditional approach that call in the tax expert for consult after the production of the Profit and Loss
                 Accounts and Balance Sheet. Our tax experts will give our wide range of clients a unique approach in Tax
-                Planning.
+                Planning.`}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -234,7 +234,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <img
+              <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Tax planning"
                 className="rounded-lg shadow-lg"
@@ -251,7 +251,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
+              <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Bank transaction verification"
                 className="rounded-lg shadow-lg"
@@ -267,9 +267,9 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-dark">Bank Transactions Verification Services</h2>
               </div>
               <p className="text-dark/80 mb-6">
-                Our experience has shown over the years that, the commercial banks over-charge commission on turnover
+                {`Our experience has shown over the years that, the commercial banks over-charge commission on turnover
                 (COT) and other charges on organizations' accounts against the approved Bankers' Tariff or the
-                negotiated and agreed tariff.
+                negotiated and agreed tariff.`}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -301,8 +301,8 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Core Values</h2>
             <div className="w-16 h-1 bg-secondary mx-auto mt-4 mb-6"></div>
             <p className="max-w-3xl mx-auto text-lg text-white/80">
-              Our practice is anchored on the highest ethical and professional standards designed to consistently add
-              value to our clients' businesses.
+              {`Our practice is anchored on the highest ethical and professional standards designed to consistently add
+              value to our clients' businesses.`}
             </p>
           </div>
 

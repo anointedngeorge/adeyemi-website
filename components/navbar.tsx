@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
-import Image from "next/image"
+// import Image from "next/image"
 import Logo from "./logo"
 import { NAVIGATION } from "./configs"
 
@@ -25,9 +25,9 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className=" flex-shrink-0 flex items-center">
               {/* <span className="text-xl font-bold text-dark">CorpVision</span> */}
-              <Logo classname="lg:w-36 lg:h-30 w-20  sm:w-28 sm:h-24" />
+                <Logo classname="lg:w-36 lg:h-30 w-20  sm:w-28 sm:h-24" />
             </Link>
-          </div>
+          </div>  
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((nav, index) => (
                 <Link key={`nav_${index}`} href={`${nav.url}`} className="text-dark hover:text-secondary">

@@ -1,10 +1,10 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { X, ChevronLeft, ChevronRight, Calendar, MapPin, ArrowLeft } from "lucide-react"
+import Image from "next/image"
+import { useState, useEffect, useCallback } from "react"
 
-// Gallery images data
+
+
 const galleryImages = [
   {
     id: 1,
@@ -76,7 +76,7 @@ export function Gallery({start=0, end=10000}) {
     setSelectedImage(null)
   }
 
-  const navigateImage = (direction: "prev" | "next") => {
+  const navigateImage = useCallback((direction: "prev" | "next") => {
     if (selectedImage === null) return
 
     const currentIndex = galleryImages.findIndex((img) => img.id === selectedImage)
@@ -89,9 +89,9 @@ export function Gallery({start=0, end=10000}) {
     }
 
     setSelectedImage(galleryImages[newIndex].id)
-  }
+  }, [selectedImage])
 
-  const selectedImageData = selectedImage ? galleryImages.find((img) => img.id === selectedImage) : null
+  // const selectedImageData = selectedImage ? galleryImages.find((img) => img.id === selectedImage) : null
 
   // Add keyboard event handling for the modal
   useEffect(() => {
@@ -109,7 +109,7 @@ export function Gallery({start=0, end=10000}) {
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [selectedImage])
+  }, [selectedImage, navigateImage])
 
   return (
     <section className="py-20">
@@ -122,7 +122,9 @@ export function Gallery({start=0, end=10000}) {
             onClick={() => openModal(image.id)}
           >
             <div className="relative aspect-[4/3] overflow-hidden">
-              <img
+              <Image
+              width={20}
+              height={20}
                 src={image.src || "/placeholder.svg"}
                 alt={image.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"

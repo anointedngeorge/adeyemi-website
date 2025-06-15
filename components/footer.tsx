@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-import Image from "next/image"
+// import Image from "next/image"
 import {CONTACT_SETUP, SERVICES, NAVIGATION, FOOTER_SHORT_DESCRIPTION} from "./configs"
 import Logo from "./logo"
 import { Button } from "./ui/button"

@@ -65,15 +65,15 @@ export default function Trustee({files}:FilesFc) {
     handleResize()
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  }, [testimonials])
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % (testimonials.length - visibleTestimonials + 1))
-  }, [visibleTestimonials])
+  }, [visibleTestimonials, testimonials])
 
   const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - visibleTestimonials : prevIndex - 1))
-  }, [visibleTestimonials])
+  }, [visibleTestimonials, testimonials])
 
   // Auto-rotate testimonials
   useEffect(() => {
